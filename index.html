@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Currículo de Gustavo Martins" />
+    <meta name="keywords" content="currículo, cv, Gustavo Martins, html" />
+    <title>Currículo - Gustavo Martins</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Botão de navegação móvel -->
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menu de navegação"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menu de navegação -->
+    <nav id="menu-navegacao" class="menu-navegacao">
+      <ul class="lista-navegacao">
+        <li><a href="#resumo" class="link-navegacao">Resumo</a></li>
+        <li><a href="#educacao" class="link-navegacao">Educação</a></li>
+        <li><a href="#experiencia" class="link-navegacao">Experiência</a></li>
+        <li><a href="#habilidades" class="link-navegacao">Habilidades</a></li>
+        <li><a href="#projetos" class="link-navegacao">Projetos</a></li>
+        <li>
+          <a href="#certificacoes" class="link-navegacao">Certificações</a>
+        </li>
+        <li><a href="#interesses" class="link-navegacao">Interesses</a></li>
+        <li><a href="#contato" class="link-navegacao">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cabeçalho com informações pessoais -->
+    <header class="cabecalho">
+      <h1 class="nome-principal" id="nome">Gustavo Martins</h1>
+      <p class="titulo-profissional">
+        Engenheiro e Desenvolvedor Web Front-end
+      </p>
+      <address class="informacoes-contato">
+        <p class="contato">
+          <span class="rotulo"><i class="fas fa-envelope"></i> Email:</span>
+          <a href="mailto:nome.sobrenome@email.com" class="link-contato"
+            >gustavomartins@email.com</a
+          >
+        </p>
+        <p class="contato">
+          <span class="rotulo"><i class="fas fa-phone"></i> Telefone:</span>
+          <a href="tel:+5511987654321" class="link-contato">(00) 99765-9921</a>
+        </p>
+        <p class="contato">
+          <span class="rotulo"
+            ><i class="fas fa-map-marker-alt"></i> Endereço:</span
+          >
+          Rua Exemplo, 123, Bairro, Cidade - UF, CEP 00000-000
+        </p>
+        <!-- Opcional: Links para redes sociais/portfólio -->
+        <div class="redes-sociais">
+          <p class="contato">
+            <span class="rotulo"
+              ><i class="fab fa-linkedin"></i> LinkedIn:</span
+            >
+            <a href="#" target="_blank" class="link-contato"
+              >linkedin.com/in/gustavomartins</a
+            >
+          </p>
+          <p class="contato">
+            <span class="rotulo"><i class="fas fa-globe"></i> Portfólio:</span>
+            <a href="#" target="_blank" class="link-contato"
+              >meuportfolio.com</a
+            >
+          </p>
+          <p class="contato">
+            <span class="rotulo"><i class="fab fa-github"></i> GitHub:</span>
+            <a href="#" target="_blank" class="link-contato"
+              >github.com/gustavomartins</a
+            >
+          </p>
+        </div>
+      </address>
+    </header>
+
+    <!-- Conteúdo principal do currículo -->
+    <main class="conteudo-principal">
+      <!-- Seção de resumo profissional -->
+      <section id="resumo" class="secao resumo-profissional">
+        <h2 class="titulo-secao">Resumo Profissional</h2>
+        <p class="texto-resumo">
+          Estudante dedicado(a) de desenvolvimento web com forte interesse em
+          front-end e paixão por criar interfaces intuitivas e acessíveis.
+          Buscando aplicar conhecimentos em HTML semântico e boas práticas de
+          desenvolvimento em projetos desafiadores.
+        </p>
+        <div class="botoes-acao">
+          <button id="btn-expandir-resumo" class="botao-acao">Ler mais</button>
+          <button id="btn-reduzir-resumo" class="botao-acao escondido">
+            Ler menos
+          </button>
+        </div>
+        <div id="resumo-expandido" class="resumo-expandido escondido">
+          <p>
+            Atualmente focado em aprimorar habilidades em JavaScript e
+            frameworks modernos como React. Possuo experiência em projetos
+            acadêmicos e estágio, onde desenvolvi competências técnicas e
+            interpessoais valiosas para o mercado de trabalho.
+          </p>
+          <p>
+            Busco constantemente novos desafios e oportunidades para crescimento
+            profissional, com interesse especial em acessibilidade web e
+            experiência do usuário.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção de educação -->
+      <section id="educacao" class="secao educacao">
+        <h2 class="titulo-secao">Educação</h2>
+        <article class="item-educacao">
+          <h3 class="titulo-curso">Análise e Desenvolvimento de Sistemas</h3>
+          <p class="detalhe-educacao">
+            <strong class="rotulo">Instituição:</strong> Universidade Exemplo
+          </p>
+          <p class="detalhe-educacao">
+            <em class="periodo">Período:</em> Janeiro 2023 - Dezembro 2025
+            (Previsto)
+          </p>
+          <p class="descricao-curso">
+            Foco em desenvolvimento web, banco de dados e engenharia de
+            software.
+          </p>
+        </article>
+        <article class="item-educacao">
+          <h3 class="titulo-curso">Curso Técnico em Informática</h3>
+          <p class="detalhe-educacao">
+            <strong class="rotulo">Instituição:</strong> Escola Técnica Exemplo
+          </p>
+          <p class="detalhe-educacao">
+            <em class="periodo">Período:</em> Fevereiro 2021 - Dezembro 2022
+          </p>
+          <p class="descricao-curso">
+            Introdução à lógica de programação, redes e hardware.
+          </p>
+        </article>
+      </section>
+
+      <!-- Seção de experiência profissional -->
+      <section id="experiencia" class="secao experiencia">
+        <h2 class="titulo-secao">Experiência Profissional</h2>
+        <div class="filtro-experiencia">
+          <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+          <button class="filtro-btn" data-filtro="estagio">Estágio</button>
+          <button class="filtro-btn" data-filtro="monitoria">Monitoria</button>
+        </div>
+        <article class="item-experiencia" data-categoria="estagio">
+          <h3 class="titulo-cargo">Estagiário(a) de Desenvolvimento Web</h3>
+          <p class="detalhe-experiencia">
+            <strong class="rotulo">Empresa:</strong> Tech Solutions Ltda.
+          </p>
+          <p class="detalhe-experiencia">
+            <em class="periodo">Período:</em> Julho 2024 - Presente
+          </p>
+          <h4 class="subtitulo-experiencia">Responsabilidades:</h4>
+          <ul class="lista-responsabilidades">
+            <li class="item-responsabilidade">
+              Auxílio na criação e manutenção de páginas web utilizando HTML e
+              CSS.
+            </li>
+            <li class="item-responsabilidade">
+              Colaboração com a equipe de design para implementar interfaces.
+            </li>
+            <li class="item-responsabilidade">
+              Testes básicos de funcionalidade e usabilidade.
+            </li>
+          </ul>
+        </article>
+        <article class="item-experiencia" data-categoria="monitoria">
+          <h3 class="titulo-cargo">Monitor(a) de Lógica de Programação</h3>
+          <p class="detalhe-experiencia">
+            <strong class="rotulo">Instituição:</strong> Universidade Exemplo
+          </p>
+          <p class="detalhe-experiencia">
+            <em class="periodo">Período:</em> Março 2024 - Junho 2024
+          </p>
+          <h4 class="subtitulo-experiencia">Responsabilidades:</h4>
+          <ul class="lista-responsabilidades">
+            <li class="item-responsabilidade">
+              Apoio a alunos com dificuldades na disciplina.
+            </li>
+            <li class="item-responsabilidade">
+              Correção de exercícios e auxílio em laboratórios.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Seção de habilidades -->
+      <section id="habilidades" class="secao habilidades">
+        <h2 class="titulo-secao">Habilidades</h2>
+        <div class="tabs-container">
+          <div class="tabs">
+            <button class="tab-btn ativo" data-tab="tecnicas">Técnicas</button>
+            <button class="tab-btn" data-tab="interpessoais">
+              Interpessoais
+            </button>
+            <button class="tab-btn" data-tab="idiomas">Idiomas</button>
+          </div>
+          <div class="tab-content ativo" id="tecnicas">
+            <article class="grupo-habilidades tecnicas">
+              <h3 class="titulo-grupo-habilidades">Habilidades Técnicas</h3>
+              <div class="barras-progresso">
+                <div class="habilidade-barra">
+                  <span class="nome-habilidade">HTML5</span>
+                  <div class="barra-container">
+                    <div class="barra" data-porcentagem="85"></div>
+                  </div>
+                  <span class="porcentagem">85%</span>
+                </div>
+                <div class="habilidade-barra">
+                  <span class="nome-habilidade">CSS3</span>
+                  <div class="barra-container">
+                    <div class="barra" data-porcentagem="75"></div>
+                  </div>
+                  <span class="porcentagem">75%</span>
+                </div>
+                <div class="habilidade-barra">
+                  <span class="nome-habilidade">JavaScript</span>
+                  <div class="barra-container">
+                    <div class="barra" data-porcentagem="60"></div>
+                  </div>
+                  <span class="porcentagem">60%</span>
+                </div>
+                <div class="habilidade-barra">
+                  <span class="nome-habilidade">Git & GitHub</span>
+                  <div class="barra-container">
+                    <div class="barra" data-porcentagem="70"></div>
+                  </div>
+                  <span class="porcentagem">70%</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tab-content" id="interpessoais">
+            <article class="grupo-habilidades interpessoais">
+              <h3 class="titulo-grupo-habilidades">
+                Habilidades Interpessoais
+              </h3>
+              <ul class="lista-habilidades">
+                <li class="item-habilidade">Comunicação clara e objetiva</li>
+                <li class="item-habilidade">
+                  Trabalho em equipe e colaboração
+                </li>
+                <li class="item-habilidade">
+                  Proatividade e vontade de aprender
+                </li>
+                <li class="item-habilidade">Resolução de problemas</li>
+              </ul>
+            </article>
+          </div>
+          <div class="tab-content" id="idiomas">
+            <article class="grupo-habilidades idiomas">
+              <h3 class="titulo-grupo-habilidades">Idiomas</h3>
+              <ul class="lista-habilidades">
+                <li class="item-habilidade">Português (Nativo)</li>
+                <li class="item-habilidade">
+                  Inglês (Intermediário - Leitura e escrita)
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seções Opcionais -->
+      <section id="projetos" class="secao projetos">
+        <h2 class="titulo-secao">Projetos Relevantes</h2>
+        <div class="carrossel-projetos">
+          <div class="controles-carrossel">
+            <button id="prev-projeto" class="controle-carrossel">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-projeto" class="controle-carrossel">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="slides-container">
+            <article class="item-projeto slide">
+              <h3 class="titulo-projeto">Página de Portfólio Pessoal</h3>
+              <p class="descricao-projeto">
+                Desenvolvimento de uma página web para apresentar projetos
+                pessoais, utilizando HTML semântico, CSS e JavaScript.
+              </p>
+              <p class="link-projeto">
+                <a href="#" target="_blank" class="botao-projeto"
+                  >Ver Projeto</a
+                >
+              </p>
+            </article>
+            <article class="item-projeto slide">
+              <h3 class="titulo-projeto">Aplicativo de Lista de Tarefas</h3>
+              <p class="descricao-projeto">
+                Aplicativo web para gerenciamento de tarefas diárias, com
+                funcionalidades de adicionar, remover e marcar tarefas como
+                concluídas.
+              </p>
+              <p class="link-projeto">
+                <a href="#" target="_blank" class="botao-projeto"
+                  >Ver Projeto</a
+                >
+              </p>
+            </article>
+            <article class="item-projeto slide">
+              <h3 class="titulo-projeto">Site Responsivo para Evento</h3>
+              <p class="descricao-projeto">
+                Desenvolvimento de site responsivo para divulgação de evento
+                acadêmico, com informações sobre programação e palestrantes.
+              </p>
+              <p class="link-projeto">
+                <a href="#" target="_blank" class="botao-projeto"
+                  >Ver Projeto</a
+                >
+              </p>
+            </article>
+          </div>
+          <div class="indicadores-carrossel">
+            <span class="indicador ativo" data-slide="0"></span>
+            <span class="indicador" data-slide="1"></span>
+            <span class="indicador" data-slide="2"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificacoes" class="secao certificacoes">
+        <h2 class="titulo-secao">Certificações e Prêmios</h2>
+        <ul class="lista-certificacoes">
+          <li class="item-certificacao">
+            Introdução ao HTML5 e CSS3 - Plataforma Exemplo Cursos (2023)
+          </li>
+          <li class="item-certificacao">
+            Aluno Destaque - Escola Técnica Exemplo (2022)
+          </li>
+        </ul>
+      </section>
+
+      <section id="interesses" class="secao interesses">
+        <h2 class="titulo-secao">Interesses e Atividades Extracurriculares</h2>
+        <ul class="lista-interesses">
+          <li class="item-interesse">
+            Participação em comunidades de desenvolvimento online
+          </li>
+          <li class="item-interesse">Leitura sobre novas tecnologias web</li>
+          <li class="item-interesse">Voluntariado em projetos sociais</li>
+        </ul>
+      </section>
+
+      <!-- Seção de contato -->
+      <section id="contato" class="secao contato">
+        <h2 class="titulo-secao">Entre em Contato</h2>
+        <p class="descricao-contato">
+          Preencha o formulário abaixo para entrar em contato comigo.
+          Responderei o mais breve possível.
+        </p>
+
+        <form id="formulario-contato" class="formulario-contato">
+          <div class="grupo-formulario">
+            <label for="nome-contato">Nome:</label>
+            <input type="text" id="nome-contato" name="nome" required />
+            <span class="erro-campo" id="erro-nome"></span>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="email-contato">Email:</label>
+            <input type="email" id="email-contato" name="email" required />
+            <span class="erro-campo" id="erro-email"></span>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="assunto-contato">Assunto:</label>
+            <input type="text" id="assunto-contato" name="assunto" required />
+            <span class="erro-campo" id="erro-assunto"></span>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="mensagem-contato">Mensagem:</label>
+            <textarea
+              id="mensagem-contato"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+            <span class="erro-campo" id="erro-mensagem"></span>
+          </div>
+
+          <div class="grupo-formulario">
+            <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Botão de voltar ao topo -->
+    <button id="btn-topo" class="btn-topo" aria-label="Voltar ao topo">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Rodapé com informações adicionais -->
+    <footer class="rodape">
+      <p class="atualizacao">Última atualização: 30 de Maio de 2025</p>
+      <p class="copyright">
+        &copy; 2025 Gustavo Martins. Todos os direitos reservados.
+      </p>
+      <!-- Links para redes sociais -->
+      <div class="redes-sociais-rodape">
+        <a href="#" class="icone-social" aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" class="icone-social" aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="#" class="icone-social" aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+  </body>
+</html>
